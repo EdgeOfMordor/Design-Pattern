@@ -43,6 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\Shop\CasualShop.cs" />
+    <Compile Include="AbstractFactory\Shop\ClassicShop.cs" />
+    <Compile Include="AbstractFactory\Shop\IShop.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\CasualShoes\CasualChildShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\CasualShoes\CasualFemaleShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\CasualShoes\CasualMaleShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\ClassicShoes\ClassicChildShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\ClassicShoes\ClassicFemaleShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\ClassicShoes\ClassicMaleShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Interfaces\IChildShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Interfaces\IFemaleShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Interfaces\IMaleShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Interfaces\IShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\SportShoes\SportChildShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\SportShoes\SportFemaleShoes.cs" />
+    <Compile Include="AbstractFactory\Shoes\Implementation\SportShoes\SportMaleShoes.cs" />
+    <Compile Include="AbstractFactory\Shop\SportShop.cs" />
     <Compile Include="FactoryMethod\Book\DetectiveBook.cs" />
     <Compile Include="FactoryMethod\Book\FantasyBook.cs" />
     <Compile Include="FactoryMethod\Book\IBook.cs" />
@@ -57,8 +74,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AbstractFactory\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
